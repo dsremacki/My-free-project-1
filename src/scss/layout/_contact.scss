@@ -1,0 +1,157 @@
+.contact {
+    background-color: $colorContact;
+    background-size: cover;
+    padding-top: 172px;
+    padding-bottom: 84px;
+    position: relative;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__form {
+        width: 100%;
+        display: flex;
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+            width: calc(100% / 2 - 30px);
+            &:last-child {
+                margin-right: 0;
+            }
+            input {
+                display: block;
+                padding: 19px;
+                border: 1px solid $formBorder;
+                background-color: $colorContact;
+                margin-bottom: 18px;
+                color: $colorGrey;
+                &:focus {
+                    outline: 1px solid $colorBtn;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &::placeholder {
+                    font-size: 16px;
+                    color: $formBorder;
+                }
+            }
+            textarea {
+                background-color: $colorContact;
+                border: 1px solid $formBorder;
+                padding: 14px;
+                color: $colorGrey;
+                &:focus {
+                    outline: 1px solid $colorBtn;
+                }
+            }
+        }
+    }
+    &__btn {
+        padding: 21px 84px;
+        background-color: $colorContactBtn;
+        border: 1px solid $colorContactBtn;
+        color: $colorWhite;
+        font-size: 22px;
+        text-transform: uppercase;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover {
+            background-color: $colorPink;
+            border: 1px solid $colorPink;
+            color:$colorContactBtn;
+        }
+    }
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        span {
+            color:#828282;
+            font-size: 24px;
+            display: block;
+            
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            a {
+                display: block;
+                border-radius: 100px;
+                padding: 25px;
+                position: relative;
+                margin-right: 5px;
+                
+                &:hover {
+                        i {
+                        color:$colorContact;
+                    }
+                }
+            }
+            i {
+                font-size: 28px;
+                border-radius: 100px;
+                color: $colorWhite;
+                display: block;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all .2s;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        padding-top: 60px;
+        &__form {
+            flex-direction: column;
+            div {
+                width: 100%;
+                margin-right: 0;
+                input {
+                    &:last-child{
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+        &__btn {
+            width: 100%;
+            padding: 21px;
+        }
+    }
+    @media only screen and (max-width: 351px) {
+        &__content {
+            h2 {
+                text-align: center;
+                &::after {
+                    top:140px;
+                }
+            }
+        }
+    }
+}
+.contact-fb {
+    background-color: #30497d;
+}
+.contact-instagram {
+    background-color: #405fa4;
+}
+.contact-twitter {
+    background-color: #339dc3;
+}
+.contact-whatsupp {
+    background-color: #2fbe39;
+    font-size: 26px !important;
+}
+.contact__bottom-logo {
+    position: absolute;
+    bottom: 45px;
+    right: 45px;
+    @media only screen and (max-width: 540px) {
+        display: none;
+    }
+}

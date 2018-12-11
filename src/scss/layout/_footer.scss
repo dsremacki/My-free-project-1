@@ -1,0 +1,32 @@
+footer {
+    background-color: $colorFooter;
+    padding: 36px 0;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+            padding: 0 15px;
+            color: #757575;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                border-right: 1px solid #757575;
+                left: 0;
+                top: 5px;
+                height: 14px;
+                
+            }
+            &:first-child::after{
+                border: 0;
+            }
+            a {
+                color: #757575;
+                &:hover {
+                    color: $colorContactBtn;
+                }
+            }
+        }
+    }
+}

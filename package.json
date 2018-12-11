@@ -1,0 +1,102 @@
+{
+  "_from": "front-end-dev-starter-kit",
+  "_id": "front-end-dev-starter-kit@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-lKIQ0khghFQA2Ar0qhw21sm3im9+9IkDxLWfRdpI3r0XTLWBHwV+zrVbi3azlMvkHWV6MTeCZhUC3UDxMPsarA==",
+  "_location": "/front-end-dev-starter-kit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "front-end-dev-starter-kit",
+    "name": "front-end-dev-starter-kit",
+    "escapedName": "front-end-dev-starter-kit",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/front-end-dev-starter-kit/-/front-end-dev-starter-kit-0.1.0.tgz",
+  "_shasum": "90445f88df7b5057077887fc9a7810f507f0a991",
+  "_spec": "front-end-dev-starter-kit",
+  "_where": "C:\\Users\\srema\\Desktop\\New folder (7)",
+  "author": {
+    "name": "iStuffs: Samuel DIDIER-LAURENT",
+    "email": "istuffs@gmail.com",
+    "url": "https://istuffs.be"
+  },
+  "bugs": {
+    "url": "https://github.com/iStuffs/starter-kit/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bootstrap-reboot-importer": "^1.0.0",
+    "bourbon": "^5.1.0",
+    "normalize.css": "^8.0.1",
+    "sassy-normalize": "^8.0.2",
+    "waypoints": "^4.0.1",
+    "wow.js": "^1.2.2"
+  },
+  "deprecated": false,
+  "description": "starter kit",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/register": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap-reboot": "^0.1.1",
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eyeglass": "^2.0.0",
+    "eyeglass-dev-eslint": "^2.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-font2css": "^0.1.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-zip": "^4.2.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "yargs": "^12.0.2"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "gitUser": "iStuffs",
+  "homepage": "https://github.com/iStuffs/starter-kit#readme",
+  "license": "CC-BY-NC-SA-4.0",
+  "main": "gulpfile.js",
+  "name": "front-end-dev-starter-kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iStuffs/starter-kit.git"
+  },
+  "scripts": {
+    "build": "gulp --production",
+    "deploy": "npm run gulp-build && npm run gh-pages",
+    "gh-pages": "git subtree push --prefix dist origin gh-pages",
+    "git-init": "git init",
+    "git-remote-add": "git remote add origin https://github.com/$npm_package_gitUser/$npm_package_name.git",
+    "git-remove": "rimraf .git",
+    "git-start": "npm run git-init && npm run github-create && npm run git-remote-add",
+    "github-create": "curl -u \"$npm_package_gitUser\" https://api.github.com/user/repos -d '{\"name\":\"'$npm_package_name'\"}'",
+    "start": "gulp",
+    "starter": "npm install && npm run git-remove && npm init && npm run git-start"
+  },
+  "version": "0.1.0"
+}

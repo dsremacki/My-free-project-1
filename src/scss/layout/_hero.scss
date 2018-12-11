@@ -1,0 +1,33 @@
+.hero {
+    margin-top: 87px;
+    background-color: $heroBG;
+    &__top {
+        padding-top: 102px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    &__bottom {
+        text-align: center;
+        padding: 58px 0 82px 0;
+    }
+    &__links {
+        display: flex;
+        justify-content: center;
+        &--first {
+            margin-right: 10px;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        &__top {
+            padding-top: 10px;
+        }
+        &__bottom {
+            padding:0 0 30px 0;
+        }
+        &__links {
+        flex-direction: column;
+        }
+    }
+}
